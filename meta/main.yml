@@ -1,6 +1,6 @@
 galaxy_info:
   author: perfSONAR
-  description: A role to install and configure the perfsonar-psconfig bundle
+  description: A role to install and configure perfsonar-psconfig-publisher
   company: perfSONAR Project
   license: Apache 2.0
 
@@ -29,8 +29,6 @@ galaxy_info:
     - performance
 
 dependencies:
-  - role: ansible-role-perfsonar-testpoint
+  - role: ansible-role-perfsonar-bundle
     vars:
       perfsonar_bundle: perfsonar-psconfig-publisher
-      perfsonar_services: "{{ perfsonar_psconfig_services }}"
-
