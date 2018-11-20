@@ -5,3 +5,4 @@
 - name: Add or replace psconfig remotes
   command: psconfig publish "{{ item }}"
   with_items: "{{ perfsonar_psconfig_publish | default([]) }}"
+  tags: [ 'ps::config' ]

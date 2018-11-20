@@ -29,6 +29,4 @@ galaxy_info:
     - performance
 
 dependencies:
-  - role: ansible-role-perfsonar-bundle
-    vars:
-      perfsonar_bundle: perfsonar-psconfig-publisher
+  - role: ansible-role-perfsonar-installer
